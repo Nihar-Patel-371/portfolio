@@ -145,7 +145,7 @@ body {
     padding-right: 20px;
 }
 .image-block {
-    flex: 0 0 150px; /* Fixed width for the image block */
+    flex: 0 0 150px;
 }
 .image-block img {
     max-width: 100%;
@@ -293,4 +293,31 @@ body {
     100%{
         transform: translateX(0%);
     }
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    width: 30%;
+    animation: scroll 120s linear infinite;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-400%); }
+}
+
+.carousel.paused {
+    animation-play-state: paused;
 }
