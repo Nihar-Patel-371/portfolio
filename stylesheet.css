@@ -8,8 +8,17 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: url("./images/header_tile.jpg");
+    /* background: url("./images/header_tile.jpg"); */
+    background-color: black;
     background-size: contain;
+    
+}
+.header h1{
+    margin-bottom:5px;
+}
+.header h2{
+    margin-top:5px;
+    margin-bottom: 5px;
 }
 #header_text{
     font-family: Gruppo;
@@ -20,9 +29,10 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
-    border: 1px rgba(255,255,255,0.18);
+    border: 1px rgb(255, 255, 255);
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
     text-align: center;
+    color: rgba(255, 255, 255, 0.5);
 }
 i{
     color: rgba(0, 0, 0, 0.73);
@@ -75,11 +85,19 @@ body {
     background-size: 400% 400%;
     animation: grad_animate 15s ease infinite;
 }
+.rel_course span{
+    border: 2px;
+    background: linear-gradient(#AC92A6, #FF6B6B);
+    padding: 4px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
 ::-webkit-scrollbar{
     width: 12px;
 }
 ::-webkit-scrollbar-thumb{
-    /* background: linear-gradient(rgb(252, 113, 113), rgb(116, 211, 255)); */
     background-color: rgb(252, 113, 113);
     border-radius: 6px;
 }
@@ -87,7 +105,6 @@ body {
     border-radius: 6px;
 }
 ::-webkit-scrollbar-track{
-    /* background-color: #eef2b744; */
     background: radial-gradient(rgb(116, 211, 255), white);
 }
 .left {
@@ -141,14 +158,42 @@ body {
     padding: 20px;
 }
 #contact {
-    width: 400px;
     position: absolute;
     color: greenyellow;
     text-align: left;
-    margin: 25px;
+    margin-left: 30px;
 }
-#contact p {
-    margin: 5px;
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.contact-buttons a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, opacity 0.3s;
+    opacity: 1;
+}
+.contact-buttons a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.contact-buttons a:hover img {
+    opacity: 1;
+}
+.contact-buttons:hover a:not(:hover) {
+    opacity: 0.5;
+}
+#contact h2 {
+    font-family: Gruppo;
+    font-size: 48px;
 }
 #particles-js
 {
@@ -177,21 +222,19 @@ body {
     position: relative;
     width: 30px;
     height: 30px;
-    background-color: #4fc3dc;
+    background-color: #4fc2dc;
     margin: 0 4px;
     border-radius: 50%;
     box-shadow: 0 0 0 10px #4fc3dc44,
      0 0 50px #4fc3dc,
      0 0 100px #4fc3dc;
      animation: bubble_scale_animate 15s linear infinite;
-     animation-duration: calc(125s / var(--i));
+     animation-duration: calc(300s / var(--i));
 }
 .bubbles span:nth-child(even)
 {
-    background: #ff2d75;
-    box-shadow: 0 0 0 10px #ff2d7544,
-    0 0 50px #ff2d75,
-    0 0 100px #ff2d75;
+    background: #ff2d76;
+    box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
 }
 @keyframes bubble_scale_animate
 {
@@ -201,7 +244,7 @@ body {
     }
     100%
     {
-        transform: translateY(-20vh) scale(1);
+        transform: translateY(-35vh) scale(1);
     }
 }
 @keyframes grad_animate{
@@ -251,7 +294,3 @@ body {
         transform: translateX(0%);
     }
 }
-@font-face {
-    font-family: myFirstFont;
-    src: url(sansation_light.woff);
-  }

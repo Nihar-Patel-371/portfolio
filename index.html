@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="Data Science,ML,AI">
+    <meta name="author" content="Nihar Patel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Nihar Patel - Data Scientist</title>
+    <link rel="icon" type="image/np-icon" href="images\favicon-32x32.png">
+
     <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>    
     <div class="header">
-        <div></div>
         <!-- <div class="grid_row">
             <div>
                 <i class="fa-solid fa-laptop-code"></i>
@@ -515,12 +520,12 @@
                 <i class="fa-solid fa-cloud"></i>
             </div>
         </div> -->
-        <div id="header_text">
+        <div id="header_text" style="z-index: 2;">
             <h1 style="font-size:64px"><en>Nihar Patel</en></h1>
             <h2 style="font-size:32px"><en>Data Scientist</en></h2>
             <p style="font-size:24px"><en><b>Passionate Data Science Master's student and an AI/ML Enthusiast with a solid background in Applied Mathematics and Programming.</b></en></p>
         </div>
-            <!-- <div class="bubbles">
+            <div class="bubbles" style="z-index: 1;">
                 <span style="--i:11;"></span>
                 <span style="--i:12;"></span>
                 <span style="--i:24;"></span>
@@ -541,27 +546,38 @@
                 <span style="--i:17;"></span>
                 <span style="--i:13;"></span>
                 <span style="--i:28;"></span>
-                <span style="--i:11;"></span>
-                <span style="--i:12;"></span>
-                <span style="--i:24;"></span>
-                <span style="--i:10;"></span>
+                <span style="--i:19;"></span>
                 <span style="--i:14;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:21;"></span>
                 <span style="--i:23;"></span>
                 <span style="--i:18;"></span>
-                <span style="--i:16;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:21;"></span>
                 <span style="--i:19;"></span>
-                <span style="--i:20;"></span>
-                <span style="--i:22;"></span>
-                <span style="--i:25;"></span>
-                <span style="--i:18;"></span>
+                <span style="--i:11;"></span>
                 <span style="--i:21;"></span>
                 <span style="--i:15;"></span>
-                <span style="--i:13;"></span>
-                <span style="--i:26;"></span>
-                <span style="--i:17;"></span>
-                <span style="--i:13;"></span>
-                <span style="--i:28;"></span>
-            </div> -->
+                <span style="--i:21;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:23;"></span>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -620,7 +636,14 @@
                             <span style="float:right;"><strong>Sep. 2023 – <em>Present</em></strong></span>
                         </p>
                         <strong>Provost Scholarship: </strong>Received a Merit-based scholarship of 8,000 USD.<br>
-                        <strong>Relevant Coursework: </strong>Probability Theory, Statistical Models, Applied-Machine Learning, Optimization Models, Deep Learning
+                        <p class="rel_course">
+                            <strong>Relevant Coursework: </strong>
+                            <span>Probability Theory</span>
+                            <span>Statistical Models</span>
+                            <span>Applied-Machine Learning</span>
+                            <span>Optimization Models</span>
+                            <span>Deep Learning</span>
+                        </p>
                     </div>
                     <div class="image-block">
                         <img src="images\stevens_logo.png" alt="Stevens Logo">
@@ -633,7 +656,14 @@
                             <span style="text-align:left;"><strong>Bachelor of Science (B.S.) in Computer Science, Minors in Business Analytics</strong>
                             <span style="float:right;"><strong>Aug. 2019 – May 2023</em></strong></span>
                         </p>
-                        <strong>Relevant Coursework: </strong>Decision Science, Predictive Analysis, Computer Vision, Artificial intelligence., Big-Data Analysis
+                        <p class="rel_course">
+                            <strong>Relevant Coursework: </strong>
+                            <span>Decision Science</span>
+                            <span>Predictive Analysis</span>
+                            <span>Computer Vision</span>
+                            <span>Artificial intelligence</span>
+                            <span>Big-Data Analysis</span>
+                        </p>
                     </div>
                     <div class="image-block">
                         <img src="images\ahmedabad_university_logo.png" alt="MICxN Laboratory">
@@ -672,11 +702,29 @@
     </div>
     <div id="particles-js">
         <div id="contact">
-            <h2>Contact</h2>
+            <!-- <h2>Contact</h2>
             <p>Email: niharjpatel372001@gmail.com</p>
             <p>LinkedIn: https://www.linkedin.com/in/niharpatel371/</p>
             <p>GitHub: https://github.com/Nihar-Patel-371</p>
-            <p>Youtube: https://www.youtube.com/@niharpatel6803</p>
+            <p>Youtube: https://www.youtube.com/@niharpatel6803</p> -->
+            <h2>Contact</h2>
+            <div class="contact-buttons">
+                <a href="mailto:niharjpatel372001@gmail.com" title="Email">
+                    <img src="\images\contact_icons\email_icon.png" alt="Email Icon">
+                </a>
+                <a href="https://www.linkedin.com/in/niharpatel371/" target="_blank" title="LinkedIn">
+                    <img src="\images\contact_icons\linkedin_icon.png" alt="LinkedIn Icon">
+                </a>
+                <a href="https://github.com/Nihar-Patel-371" target="_blank" title="GitHub">
+                    <img src="\images\contact_icons\github_icon.png" alt="GitHub Icon">
+                </a>
+                <a href="https://www.youtube.com/@niharpatel6803" target="_blank" title="YouTube">
+                    <img src="\images\contact_icons\youtube_icon.png" alt="YouTube Icon">
+                </a>
+                <a href="https://www.kaggle.com/niharpatel03" target="_blank" title="Kaggle">
+                    <img src="images\contact_icons\kaggle_icon.png" alt="Kaggle Icon">
+                </a>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="particles.js"></script>
