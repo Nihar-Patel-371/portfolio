@@ -6,6 +6,10 @@
     <meta name="keywords" content="Data Science,ML,AI">
     <meta name="author" content="Nihar Patel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="title" />
+    <meta property="og:description" content="Your Page Portfolio XD" />
+    <meta property="og:image" content="Link to image" />
+    <meta property="og:url" content="https://web.whatsapp.com/" />
 
     <title>Nihar Patel - Data Scientist</title>
     <link rel="icon" type="image/np-icon" href="images\favicon-32x32.png">
@@ -15,11 +19,11 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>    
-    <div class="header">
+    <div class="header" id="header">
         <div id="header_text" style="z-index: 2;">
             <h1 style="font-size:64px"><en>Nihar Patel</en></h1>
             <h2 style="font-size:32px"><en>Data Scientist</en></h2>
-            <p style="font-size:28px"><en><b>Passionate Data Science Master's student | AI/ML Enthusiast</b></en></p>
+            <p style="font-size:24px"><en><b>Passionate Data Science Master's student  ||  AI/ML Enthusiast</b></en></p>
         </div>
             <div class="bubbles" style="z-index: 1;">
                 <span style="--i:11;"></span>
@@ -76,6 +80,17 @@
             </div>
         </div>
     </div>
+
+    <div id="nav">
+        <ul>
+            <li><a href="#header"><strong>HOME</strong></a></li>
+            <li><a href="#work"><strong>WORK EXPERIENCE</strong></a></li>
+            <li><a href="#education"><strong>EDUCATION</strong></a></li>
+            <li><a href="#project"><strong>PROJECTS</strong></a></li>
+            <li><a href="#contact"><strong>CONTACT</strong></a></li>
+        </ul>
+    </div>
+
     <div class="container">
         <div class="left">
             <img src="images\photo.png" alt="Nihar Patel">
@@ -133,7 +148,7 @@
             </div>
         </div>
         <div class="right">
-            <div class="work">
+            <div class="work" id="work">
                 <h2 style="font-size: 32px;">WORK EXPERIENCE</h2>
                 <div class="block">
                     <div class="text-block">
@@ -174,7 +189,7 @@
                     </div>
                 </div>
             </div>
-            <div class="education">
+            <div class="education" id="education">
                 <h2 style="font-size: 32px;">EDUCATION</h2>
                 <div class="block">
                     <div class="text-block">
@@ -220,8 +235,9 @@
                     </div>
                 </div>
             </div>
-            <div class="project">
+            <div class="project" id="project">
                 <h2 style="font-size: 32px;">RELATED PROJECTS</h2>
+
                 <div class="block">
                     <div class="text-block">
                         <p><span style="text-align:left; font-size: 18px;"><strong>Beijing Air Quality Index : Time Series Analysis</strong>
@@ -233,7 +249,7 @@
                             <li>Compared time-series forecasting models: SARIMA, Prophet, Vector Auto-Regressive (VAR), and Multi-Layer Perceptron (MLP).</li>
                             <li>Identified Prophet as the best univariate model and MLP as the best multivariate model, with potential exploration of RNN and LSTM.</li>
                         </ul>
-                        <!-- <embed src="https://emgithub.com/Nihar-Patel-371/Time-Series-Air-Quality-Index-Analysis" style="width:100%; height: 300px;"> -->
+                        <p><b>Github: <a href="https://github.com/Nihar-Patel-371/Time-Series-Air-Quality-Index-Analysis">https://github.com/Nihar-Patel-371/Time-Series-Air-Quality-Index-Analysis</a></b></p>
                     </div>
                 </div>
                 <div class="block">
@@ -246,6 +262,7 @@
                             <li>Developed and evaluated machine learning models: Linear Regression, Random Forest, kNN, XGBoost, and CatBoost.</li>
                             <li>Achieved best performance with CatBoost (MSE: 72.86, R²: 0.9955) followed up by XGBoost (MSE: 101.83, R²: 0.9937).</li>
                         </ul>
+                        <p><b>Github: <a href="https://github.com/Nihar-Patel-371/Statistical-Analysis-of-Vehicles-Fuel-Economy-and-Emission">https://github.com/Nihar-Patel-371/Statistical-Analysis-of-Vehicles-Fuel-Economy-and-Emission</a></b></p>
                     </div>
                 </div>
                 <div class="block">
@@ -258,6 +275,7 @@
                             <li>Implemented and compared machine-learning models, Random-Forest, XGBoost, and CatBoost, using GridSearchCV.</li>
                             <li>Achieving an accuracy of more than 80%, securing a global leaderboard score under 600, out of more than 3000 teams.</li>
                         </ul>
+                        <p><b>Github: <a href="https://github.com/Nihar-Patel-371/Spaceship-Titanic-Kaggle">https://github.com/Nihar-Patel-371/Spaceship-Titanic-Kaggle</a></b></p>
                     </div>
                 </div>
                 <div class="block">
@@ -270,6 +288,7 @@
                             <li>The raw data for this has been available on Kaggle competition, the dataset includes more than 23,500 sequential images.</li>
                             <li>YOLOv5s model was implemented, by combining various concepts of Computer Vision and CNN like Residual blocks for segmenting the images, Bounding box regression for object contour detection, and IOU for validating, the model.</li>
                         </ul>
+                        <p><b>Github: <a href="https://github.com/Nihar-Patel-371/Real-time-Object-Detection-and-Recognition">https://github.com/Nihar-Patel-371/Real-time-Object-Detection-and-Recognition</a></b></p>
                     </div>
                 </div>
 
