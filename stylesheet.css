@@ -82,8 +82,9 @@ i:hover{
 }
 #nav {
     font-family: Gruppo;
+    overflow:auto;
     background-color: #00000000;
-    margin: 0px 10px 10px 10px;
+    margin: 1px 10px 10px 10px;
     padding: 0px 10px 10px 10px;
     justify-content: center;
 }
@@ -93,7 +94,7 @@ i:hover{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 5px 10px 10px 10px;
+    margin: 0px 10px 10px 10px;
     align-items: center;
     border-color: #111;
     border-width: 2px;    
@@ -101,9 +102,9 @@ i:hover{
 #nav ul li{
     flex: 1;
     text-align: center;
-    margin: 0 20px;
-    padding: 10px;
-    border-radius: 10px 10px 30px 30px;
+    margin: 0 1px;
+    padding: 10px 10px 0px 10px;
+    border-radius: 5px 5px 30px 30px;
     height: 30px;
     border: 3px solid #202020e4;
     background-color: #202020e4;
@@ -114,7 +115,7 @@ i:hover{
     flex: 1;
     text-align: center;
     margin: 0 20px;
-    padding: 10px 0;
+    padding: 10px 10px 0px 10px;
     border-radius: 30px 30px 10px 10px;
     border: 3px solid #AC92A6;
     background-color: #AC92A6;
@@ -207,6 +208,19 @@ body {
     animation: blink 12s infinite;
     -webkit-animation: blink 12s infinite; */
 }
+.project {
+    margin: 10px;
+    padding: 10px;
+}
+.project h2{
+    font-family: Gruppo;
+    font-weight: bold;
+    text-align: center;
+    /* text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite; */
+}
 .block{
     background: linear-gradient(125deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
     backdrop-filter: blur(10px);
@@ -234,6 +248,7 @@ body {
     height: auto;
 }
 .container {
+    overflow:auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -452,4 +467,3 @@ body {
       color: #fff6a9;
     }
   }
-  
