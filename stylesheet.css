@@ -2,22 +2,23 @@ html {
     scroll-behavior: smooth;
   }
 .header {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 30px;
     border-radius: 0px 0px 20px 20px;
     box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.4);
 
-    position: relative;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
+    position: relative;
     overflow: hidden;
-    /* background: url("./images/header_tile.jpg"); */
-    background-color: black;
-    background-size: contain;
-    
+    background-color: rgb(0, 0, 0);
+    background-size: auto;
+    align-content: center;
+
 }
 .header h1{
     margin-bottom:5px;
+    margin-top: 5px;
 }
 .header h2{
     margin-top:5px;
@@ -26,9 +27,10 @@ html {
 #header_text{
     font-family: Gruppo;
     position: relative;
-    margin: 20px 200px 20px 200px;
+    max-width: fit-content;
+    margin-inline: auto;
     padding: 5px;
-    background: linear-gradient(125deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    background: linear-gradient(125deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -116,11 +118,11 @@ i:hover{
     text-align: center;
     margin: 0 20px;
     padding: 10px 10px 0px 10px;
-    border-radius: 30px 30px 10px 10px;
+    border-radius: 30px 30px ;
+    height: 30px;
     border: 3px solid #AC92A6;
     background-color: #AC92A6;
     font-size: x-large;
-    
     transition: 0.3s;
 }
 #nav ul li a{
@@ -203,10 +205,6 @@ body {
 .right h2{
     font-family: Gruppo;
     font-weight: bold;
-    /* text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
-    animation: blink 12s infinite;
-    -webkit-animation: blink 12s infinite; */
 }
 .project {
     margin: 10px;
@@ -216,10 +214,6 @@ body {
     font-family: Gruppo;
     font-weight: bold;
     text-align: center;
-    /* text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
-    animation: blink 12s infinite;
-    -webkit-animation: blink 12s infinite; */
 }
 .block{
     background: linear-gradient(125deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
@@ -308,6 +302,7 @@ body {
     top: 0px;
     left: 0px;
     overflow: hidden;
+    /* flex: 1; */
 }
 .bubbles
 {
@@ -466,4 +461,142 @@ body {
     text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
       color: #fff6a9;
     }
+  }
+
+
+  /********************************************************************************************************************************************/
+
+  article {
+    --img-scale: 1.001;
+    --title-color: black;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: none;
+    background: #ca9b6642;
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 4px 0px, rgba(0, 0, 0, 0.01) 0px 0px 0px 1px;
+    overflow: hidden;
+  }
+  
+  article a::after {
+    position: absolute;
+    inset-block: 0;
+    inset-inline: 0;
+    cursor: pointer;
+    content: "";
+  }
+  
+  /* basic article elements styling */
+  article h2 {
+    margin: 0 0 20px 0;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    transition: color 0.3s ease-out;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  
+  article img {
+    max-width: 100%;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .article-body {
+    padding: 20px;
+  }
+  
+  article a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #28666e;
+  }
+  
+  article a:focus {
+    outline: 1px dotted #28666e;
+  }
+  
+  article a .icon {
+    min-width: 20px;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    transform: translateX(var(--link-icon-translate));
+    opacity: var(--link-icon-opacity);
+    transition: all 0.1s;
+  }
+  
+  /* using the has() relational pseudo selector to update our custom properties */
+  article:has(:hover, :focus) {
+    --img-scale: 1.1;
+    --title-color: #28666e;
+    --link-icon-translate: 0;
+    --link-icon-opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  
+  
+  /************************ 
+  Generic layout (demo looks)
+  **************************/
+  
+  .articles {
+    display: grid;
+    /* max-width: 1200px; */
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+  }
+  
+  @media screen and (max-width: 960px) {
+    article {
+      container: card/inline-size;
+    }
+    .article-body p {
+      display: none;
+    }
+  }
+  
+  @container card (min-width: 700px) {
+    .article-wrapper {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 16px;
+    }
+    .article-body {
+      padding-left: 0;
+    }
+    figure {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    figure img {
+      height: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+  }
+  
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
   }

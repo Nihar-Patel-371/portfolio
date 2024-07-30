@@ -20,11 +20,12 @@
 </head>
 <body>    
     <div class="header" id="header">
-        <div id="header_text" style="z-index: 2;">
-            <h1 style="font-size:64px"><en>Nihar Patel</en></h1>
-            <h2 style="font-size:32px"><en>Data Scientist</en></h2>
-            <p style="font-size:24px"><en><b>Passionate Data Science Master's student  ||  AI/ML Enthusiast</b></en></p>
+        <div id="header_text" style="z-index: 2; padding: 0px 50px;">
+            <h1 style="font-size:64px; padding: 10px;"><en>Nihar Patel</en></h1>
+            <h2 style="font-size:32px; padding: 10px;"><en>Data Scientist</en></h2>
+            <p style="font-size:24px; padding: 10px; margin: 5px;"><en><b>Passionate Data Science Master's student  |  AI/ML Enthusiast</b></en></p>
         </div>
+        <div>  
             <div class="bubbles" style="z-index: 1;">
                 <span style="--i:11;"></span>
                 <span style="--i:12;"></span>
@@ -70,12 +71,12 @@
                 <span style="--i:21;"></span>
                 <span style="--i:15;"></span>
                 <span style="--i:21;"></span>
-                <span style="--i:23;"></span>
+                <span style="--i:12;"></span>
                 <span style="--i:19;"></span>
-                <span style="--i:11;"></span>
-                <span style="--i:19;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:15;"></span>
                 <span style="--i:21;"></span>
-                <span style="--i:19;"></span>
+                <span style="--i:11;"></span>
                 <span style="--i:23;"></span>
             </div>
         </div>
@@ -243,60 +244,161 @@
     <div class="project" id="project">
         <h2 style="font-size: 32px;">RELATED PROJECTS</h2>
 
-        <div class="block">
-            <div class="text-block">
-                <p><span style="text-align:left; font-size: 18px;"><strong>Beijing Air Quality Index : Time Series Analysis</strong>
-                    <span style="float:right;"><strong>Jan. 2024 – May. 2024</strong></span>
-                </p>
-                <ul>
-                    <li>Conducted polynomial interpolation, auto-correlation, partial autocorrelation, trend, seasonality, and residual analysis.</li>
-                    <li>Utilized Pmdarima to determine optimal ARIMA and SARIMA hyperparameters (p, d, q).</li>
-                    <li>Compared time-series forecasting models: SARIMA, Prophet, Vector Auto-Regressive (VAR), and Multi-Layer Perceptron (MLP).</li>
-                    <li>Identified Prophet as the best univariate model and MLP as the best multivariate model, with potential exploration of RNN and LSTM.</li>
-                </ul>
-                <p><b>Github: <a href="https://github.com/Nihar-Patel-371/Time-Series-Air-Quality-Index-Analysis">https://github.com/Nihar-Patel-371/Time-Series-Air-Quality-Index-Analysis</a></b></p>
-            </div>
-        </div>
-        <div class="block">
-            <div class="text-block">
-                <p><span style="text-align:left; font-size: 18px;"><strong>Statistical Analysis of Vehicles Fuel Economy and Emission</strong>
-                    <span style="float:right;"><strong>Jan. 2024 – May. 2024</strong></span>
-                </p>
-                <ul>
-                    <li>Conducted advanced EDA and statistical tests (Mann-Whitney, Fisher Exact, Chi-square, ANOVA) to derive insights.</li>
-                    <li>Developed and evaluated machine learning models: Linear Regression, Random Forest, kNN, XGBoost, and CatBoost.</li>
-                    <li>Achieved best performance with CatBoost (MSE: 72.86, R²: 0.9955) followed up by XGBoost (MSE: 101.83, R²: 0.9937).</li>
-                </ul>
-                <p><b>Github: <a href="https://github.com/Nihar-Patel-371/Statistical-Analysis-of-Vehicles-Fuel-Economy-and-Emission">https://github.com/Nihar-Patel-371/Statistical-Analysis-of-Vehicles-Fuel-Economy-and-Emission</a></b></p>
-            </div>
-        </div>
-        <div class="block">
-            <div class="text-block">
-                <p><span style="text-align:left; font-size: 18px;"><strong>Spaceship Titanic (Kaggle Competition) </strong>
-                    <span style="float:right;"><strong>Dec. 2023 – Jan. 2024</strong></span>
-                </p>
-                <ul>
-                    <li> Performed Exploratory Data Analysis (EDA), data visualization, and data modeling, including descriptive Factorial Analysis.</li>
-                    <li>Implemented and compared machine-learning models, Random-Forest, XGBoost, and CatBoost, using GridSearchCV.</li>
-                    <li>Achieving an accuracy of more than 80%, securing a global leaderboard score under 600, out of more than 3000 teams.</li>
-                </ul>
-                <p><b>Github: <a href="https://github.com/Nihar-Patel-371/Spaceship-Titanic-Kaggle">https://github.com/Nihar-Patel-371/Spaceship-Titanic-Kaggle</a></b></p>
-            </div>
-        </div>
-        <div class="block">
-            <div class="text-block">
-                <p><span style="text-align:left; font-size: 18px;"><strong>Real-time Object Detection and Recognition : YOLOv5</strong>
-                    <span style="float:right;"><strong>Jan. 2022 – May. 2022</strong></span>
-                </p>
-                <ul>
-                    <li>Realtime object recognition was implemented to calculate the population of COTS (starfish) to prevent their outbreak.</li>
-                    <li>The raw data for this has been available on Kaggle competition, the dataset includes more than 23,500 sequential images.</li>
-                    <li>YOLOv5s model was implemented, by combining various concepts of Computer Vision and CNN like Residual blocks for segmenting the images, Bounding box regression for object contour detection, and IOU for validating, the model.</li>
-                </ul>
-                <p><b>Github: <a href="https://github.com/Nihar-Patel-371/Real-time-Object-Detection-and-Recognition">https://github.com/Nihar-Patel-371/Real-time-Object-Detection-and-Recognition</a></b></p>
-            </div>
-        </div>
+        <section class="articles">
+            <article>
+                <div class="article-wrapper">
+                  <figure>
+                    <img src="images\project_icons\Beijing_Air_Quality_Index_Time_Series_Analysis_logo.jpg" alt="" />
+                  </figure>
+                  <div class="article-body">
+                    <h2>Beijing Air Quality Index : Time Series Analysis</h2>
+                    <p>
+                      <ul>
+                          <li>Conducted polynomial interpolation, auto-correlation, partial autocorrelation, trend, seasonality, and residual analysis.</li>
+                          <li>Utilized Pmdarima to determine optimal ARIMA and SARIMA hyperparameters (p, d, q).</li>
+                          <li>Compared time-series forecasting models: SARIMA, Prophet, Vector Auto-Regressive (VAR), and Multi-Layer Perceptron (MLP).</li>
+                          <li>Identified Prophet as the best univariate model and MLP as the best multivariate model, with potential exploration of RNN and LSTM.</li>
+                      </ul>
+                    </p>
+                    <a href="https://github.com/Nihar-Patel-371/Time-Series-Air-Quality-Index-Analysis" target="_blank" class="read-more">
+                      Read more <span class="sr-only">about this is some title</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+            </article>
 
+
+            <article>
+              <div class="article-wrapper">
+                <figure>
+                  <img src="images\project_icons\infographics_of_automobile_logo.jpg" alt="" />
+                </figure>
+                <div class="article-body">
+                  <h2>Statistical Analysis of Vehicles Fuel Economy and Emission</h2>
+                  <p>
+                    <ul>
+                        <li>Conducted advanced EDA and statistical tests (Mann-Whitney, Fisher Exact, Chi-square, ANOVA) to derive insights.</li>
+                        <li>Developed and evaluated machine learning models: Linear Regression, Random Forest, kNN, XGBoost, and CatBoost.</li>
+                        <li>Achieved best performance with CatBoost (MSE: 72.86, R²: 0.9955) followed up by XGBoost (MSE: 101.83, R²: 0.9937).</li>
+                    </ul>
+                  </p>
+                  <a href="https://github.com/Nihar-Patel-371/Statistical-Analysis-of-Vehicles-Fuel-Economy-and-Emission" target="_blank" class="read-more">
+                    Read more <span class="sr-only">about this is some title</span>
+                    <svg xmlns="https://github.com/Nihar-Patel-371/Statistical-Analysis-of-Vehicles-Fuel-Economy-and-Emission" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article>
+                <div class="article-wrapper">
+                  <figure>
+                    <img src="images\project_icons\starfish_logo.jpg" alt="" />
+                  </figure>
+                  <div class="article-body">
+                    <h2>Real-time Object Detection and Recognition : YOLOv5</h2>
+                    <p>
+                        <ul>
+                            <li>Performed Exploratory Data Analysis (EDA), data visualization, and data modeling, including descriptive Factorial Analysis.</li>
+                            <li>Implemented and compared machine-learning models, Random-Forest, XGBoost, and CatBoost, using GridSearchCV.</li>
+                            <li>Achieving an accuracy of more than 80%, securing a global leaderboard score under 600, out of more than 3000 teams.</li>
+                        </ul>
+                    </p>
+                    <a href="https://github.com/Nihar-Patel-371/Real-time-Object-Detection-and-Recognition" target="_blank" class="read-more">
+                      Read more <span class="sr-only">about this is some title</span>
+                      <svg xmlns="https://github.com/Nihar-Patel-371/Real-time-Object-Detection-and-Recognition" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-wrapper">
+                  <figure>
+                    <img src="images\project_icons\Huge_Database_Servers_logo.jpg" alt="" />
+                  </figure>
+                  <div class="article-body">
+                    <h2>Medical Database Management System</h2>
+                    <p>
+                        <ul>
+                            <li>Created normalized tables and Entity Relationship diagrams (ER Diagrams), to develop and maintain scalable and efficient data processing pipelines in MySQL.</li>
+                            <li>Data integrity via primary keys, foreign keys, and CHECK constraints, to ensure the accuracy and consistency of data.</li>
+                            <li>Developed PL/SQL triggers for automating discount applications (post-insert bill info) and order processing. </li>
+                            <li>Executed efficient ETL, and data manipulation operations, ensuring accurate and up-to-date transactional records.</li>
+                        </ul>
+                    </p>
+                    <a href="https://github.com/Nihar-Patel-371/Medical-Database-Management-System" target="_blank" class="read-more">
+                      Read more <span class="sr-only">about this is some title</span>
+                      <svg xmlns="https://github.com/Nihar-Patel-371/Medical-Database-Management-System" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+            </article>
+
+
+
+            <article>
+                <div class="article-wrapper">
+                  <figure>
+                    <img src="images\project_icons\Spaceship_titanic_logo.jpg" alt="" />
+                  </figure>
+                  <div class="article-body">
+                    <h2>Spaceship Titanic (Kaggle Competition)</h2>
+                    <p>
+                        <ul>
+                            <li>Performed Exploratory Data Analysis (EDA), data visualization, and data modeling, including descriptive Factorial Analysis.</li>
+                            <li>Implemented and compared machine-learning models, Random-Forest, XGBoost, and CatBoost, using GridSearchCV.</li>
+                            <li>Achieving an accuracy of more than 80%, securing a global leaderboard score under 600, out of more than 3000 teams.</li>
+                        </ul>
+                    </p>
+                    <a href="https://github.com/Nihar-Patel-371/Spaceship-Titanic-Kaggle" target="_blank" class="read-more">
+                      Read more <span class="sr-only">about this is some title</span>
+                      <svg xmlns="https://github.com/Nihar-Patel-371/Spaceship-Titanic-Kaggle" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+            </article>
+
+
+            <article>
+                <div class="article-wrapper">
+                  <figure>
+                    <img src="images\project_icons\kaggleX_skill_assessment_challenge_icon.png" alt="" />
+                  </figure>
+                  <div class="article-body">
+                    <h2>Spaceship Titanic (Kaggle Competition)</h2>
+                    <p>
+                        <ul>
+                            <li>Achieved a global rank of 250, during the Assessment Challenge.</li>
+                            <li>Performed Exploratory Data Analysis (EDA), data visualization, and data modeling, including descriptive Factorial Analysis.</li>
+                            <li>Implemented and compared machine-learning models, Random-Forest, XGBoost, and CatBoost, using GridSearchCV.</li>
+                            <li>Achieving an accuracy of more than 80%, securing a global leaderboard score under 600, out of more than 3000 teams.</li>
+                        </ul>
+                    </p>
+                    <a href="https://github.com/Nihar-Patel-371/Spaceship-Titanic-Kaggle" target="_blank" class="read-more">
+                      Read more <span class="sr-only">about this is some title</span>
+                      <svg xmlns="https://github.com/Nihar-Patel-371/Spaceship-Titanic-Kaggle" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+            </article>
+
+
+
+        </section>
     </div>
 
     <div class="carousel-container">
