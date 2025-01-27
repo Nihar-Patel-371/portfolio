@@ -1,0 +1,511 @@
+/* General Styles */
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #465460; /* Primary Dark */
+  background: linear-gradient(180deg, #465460 1%, #2c2c2c);
+  color: #f3f3f3; /* Light Background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Top Section */
+.top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #242222; /* Secondary Dark */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 40px;
+  border: 4px solid #ffba4c; /* Primary Accent */
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro {
+  flex: 1;
+}
+
+.intro h1 {
+  margin: 0 0 10px;
+  font-size: 2em;
+  color: #f0f0f0; /* Light Background */
+}
+
+.intro p {
+  margin: 0 0 20px;
+  font-size: 1.1em;
+  color: #778DA9; /* Secondary Accent */
+  max-width: 400px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 2px 2px;
+  height: 30px;
+  width: 60px;
+  text-decoration: none;
+  box-shadow: 0 2px 4px 1px #dbe7eecf;
+  border-radius: 20px;
+  background:#e0e1dd14;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  padding-top: 2px;
+  padding-bottom: 0px;
+  margin-top: 2px;
+  background: radial-gradient(#edededbd, #6c6c6c);
+}
+
+.btn img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* Timeline Container */
+.timeline-container {
+  top: 0px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+/* Individual Timeline */
+.timeline {
+  width: 45%;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #f65454; /* Primary Accent */
+  left: 0; /* Central line on the left */
+}
+
+.timeline-title {
+  font-size: 1.8em;
+  color: #ff6e58; /* Light Background */
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-org {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  text-shadow: 2px 2px 4px #000000;
+
+}
+
+.timeline-logo {
+  width: 60px; /* Logo size */
+  height: 60px; /* Logo size */
+  border-radius: 8px; /* Slightly rounded corners */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff; /* Secondary Dark */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%); /* Center the logo on the line */
+}
+
+.timeline-logo img {
+  width: 100%; /* Fill the square */
+  height: 100%; /* Fill the square */
+  object-fit: cover; /* Ensure the image fits nicely */
+}
+
+.org-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #E0E1DD; /* Light Background */
+  margin-left: 50px; /* Align org name to the right of the logo */
+}
+
+.org-name .timeline-date {
+  font-size: 0.9em;
+  color: #778DA9; /* Secondary Accent */
+  font-weight: normal;
+}
+
+.timeline-org-card {
+  padding: 20px;
+  background: #1B263B;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px; /* Space between logo and card */
+  margin-left: -10px; /* Align card with org name */
+
+
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur( 2px );
+  border-radius: 1em;
+}
+
+.timeline-org-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #ffd787; /* Light Background */
+}
+
+.timeline-org-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.timeline-org-card li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-section {
+    padding: 20px;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .timeline-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .timeline::before {
+    left: 0; /* Central line on the left */
+  }
+
+  .timeline-logo {
+    left: 0; /* Center the logo on the line */
+    transform: translateX(-50%);
+  }
+
+  .org-name {
+    margin-left: 40px; /* Adjust for smaller screen */
+  }
+
+  .timeline-org-card {
+    margin-left: 40px; /* Adjust for smaller screen */
+  }
+}
+
+/* Projects Button */
+.projects-button {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #f65454; /* Primary Accent */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  color: #E0E1DD; /* Light Background */
+  padding: 15px 20px;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  z-index: 100;
+  transition: 0.3s ease;
+}
+
+.projects-button.active{
+  background-color: #f65454;
+  color: #171717;
+}
+
+
+.projects-button span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Projects Section */
+.projects-section {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #0D1B2A; /* Primary Dark */
+  transition: all 0.5s ease;
+  z-index: 1;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.projects-section.active {
+  left: 0;
+  /* position: relative; */
+}
+
+.projects-title {
+  font-size: 2rem;
+  color: #E0E1DD; /* Light Background */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #1B263B; /* Secondary Dark */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #E0E1DD; /* Light Background */
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #778DA9; /* Secondary Accent */
+  margin-bottom: 15px;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #415A77; /* Primary Accent */
+  color: #E0E1DD; /* Light Background */
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #1B263B; /* Secondary Dark */
+}
+
+
+/* Thumbnail Background */
+.project-thumbnail {
+    height: 200px; /* Adjust height as needed */
+    background-size: cover; /* Ensure the image covers the area */
+    background-position: center; /* Center the image */
+    position: relative;
+}
+
+/* Project Content */
+.project-content {
+    padding: 20px;
+    position: relative;
+    z-index: 1; /* Ensure content is above the thumbnail */
+    color: #fff; /* Light text for contrast */
+}
+
+/* Project Title */
+.project-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+}
+
+/* Project Description */
+.project-content p {
+    margin: 0 0 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Button */
+.project-content button {
+    background: #007bff; /* Blue button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.project-content button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+
+/* About Button */
+.about-button {
+  position: fixed;
+  top: 60%; /* Position below the Projects Button */
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #415A77; /* Different color for distinction */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  color: #E0E1DD;
+  padding: 15px 20px;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  z-index: 100;
+}
+
+.about-button.active {
+  color: #171717;
+}
+
+.about-button span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* About Section */
+.about-section {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #0D1B2A;
+  transition: all 0.5s ease;
+  z-index: 1;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.about-section.active {
+  background-image: url(assets/images/icons/car-icon.png);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  left: 0;
+}
+
+.about-title {
+  font-size: 2rem;
+  color: #E0E1DD;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #778DA9;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f1f1f100; /* Light gray background */
+  border-radius: 4px; /* Rounded corners for the track */
+}
+
+/* Thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Gray color for the thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+  /* border: 5px solid transparent; */
+}
+
+/* Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker gray on hover */
+  border: 5px solid transparent;
+}
